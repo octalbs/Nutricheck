@@ -6,7 +6,7 @@ module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
   
   return {
-    entry: './src/index.js',
+    entry: './src/main.jsx', // Pastikan entry point sudah benar
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'js/[name].[contenthash].js',
@@ -23,14 +23,14 @@ module.exports = (env, argv) => {
     },
     module: {
       rules: [
-        // JavaScript/TypeScript
+        // JavaScript dan JSX
         {
-          test: /\.(js|jsx|ts|tsx)$/,
+          test: /\.(js|jsx)$/, // Menggunakan .js dan .jsx saja
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env'],
+              presets: ['@babel/preset-env', '@babel/preset-react'],
             },
           },
         },
@@ -62,7 +62,7 @@ module.exports = (env, argv) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './src/index.html',
+        template: './public/index.html', // Template HTML
         filename: 'index.html',
       }),
       isProduction && new MiniCssExtractPlugin({
@@ -70,7 +70,7 @@ module.exports = (env, argv) => {
       }),
     ].filter(Boolean),
     resolve: {
-      extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      extensions: ['.js', '.jsx'], // Menangani file .js dan .jsx
     },
     optimization: {
       moduleIds: 'deterministic',
