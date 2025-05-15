@@ -1,14 +1,19 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
+import Footer from './components/Footer.jsx';
+import Navbar from './components/Navbar.jsx';
+import Home from './pages/Home'; 
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <h1>Welcome to NutriCheck</h1>
+      <Routes> {}
+        <Route path="/" element={<Home />} /> {}
+        {}
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
