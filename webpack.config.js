@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
@@ -14,7 +16,7 @@ module.exports = (env, argv) => {
     },
     devServer: {
       static: {
-        directory: path.join(__dirname, 'dist'),
+        directory: path.join(__dirname, 'public'),
       },
       hot: true,
       open: true,
@@ -64,6 +66,14 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: './public/index.html', // Template HTML
         filename: 'index.html',
+      }),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: path.resolve(__dirname, 'public/assets'),
+            to: 'assets',
+          },
+        ],
       }),
       isProduction && new MiniCssExtractPlugin({
         filename: 'css/[name].[contenthash].css',
