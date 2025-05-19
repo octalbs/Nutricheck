@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src="/assets/image/logo.png" alt="NutriCheck" className="h-20" />
+          <img src="/assets/image/logo.png" alt="NutriCheck" className="h-25" />
         </div>
 
         {/* Menu */}
@@ -23,7 +23,7 @@ const Navbar = () => {
         {/* Buttons (Login and Sign-Up) */}
         <div className="flex space-x-4">
           <Link to="/login" className="bg-[#196D0D] text-white px-4 py-2 rounded-full hover:bg-green-600 transition">Login</Link> {/* Fixed the path */}
-          <Link to="/signup" className="bg-white text-green-500 px-4 py-2 rounded-full border-2 border-[#196D0D] hover:bg-green-600 hover:text-white transition">Sign-Up</Link> {/* Fixed the path */}
+          <Link to="/signup" className="bg-white text-[#196D0D] px-4 py-2 rounded-full border-2 border-[#196D0D] hover:bg-green-600 hover:text-white transition">Sign-Up</Link> {/* Fixed the path */}
         </div>
       </div>
     </nav>

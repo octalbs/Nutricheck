@@ -1,55 +1,57 @@
 import React from 'react';
+import '../styles/index.css';
 
 const Footer = () => {
   return (
-    <footer className="bg-yellow-50 text-gray-800 py-8">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-start">
-        {/* Logo and Description */}
-        <div className="flex flex-col items-start mb-6 md:mb-0">
-          <div className="flex items-center space-x-2">
-            <img src="/path/to/logo.png" alt="NutriCheck" className="h-10" /> {/* Ganti dengan path logo kamu */}
-            <span className="text-2xl font-semibold text-green-700">NutriCheck</span>
+    <footer className="bg-[#F9F9F9] text-gray-800 ">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex justify-between ">
+
+          {/* Logo and Text */}
+          <div>            
+              <img src="/assets/image/logo.png" alt="NutriCheck" className="h-25" />
+              <p className="text-lg text-gray-500 mt-2">
+                Healthy and educational <br /> platform for a better life.
+              </p>            
+          </div>         
+
+          {/* Navigation */}
+          <div className="space-y-1">
+            <h4 className="font-semibold text-lg">Navigation</h4>
+            <ul className="text-sm text-gray-500 space-y-1">
+              <li><a href="/" className="hover:text-green-600">Home</a></li>              
+              <li><a href="/tracker" className="hover:text-green-600">Tracker</a></li>
+              <li><a href="/education" className="hover:text-green-600">Education</a></li>
+              <li><a href="/about" className="hover:text-green-600">About Us</a></li>
+            </ul>
           </div>
-          <p className="mt-2 text-sm text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Dignissimos vel quidem ipsum saepe odit! Optio vitae harum ipsum
-            reiciendis, iure nobis.
-          </p>
-        </div>
 
-        {/* Contact Us Section */}
-        <div className="flex flex-col mb-6 md:mb-0">
-          <h3 className="font-semibold text-lg text-gray-800">Contact Us</h3>
-          <ul className="mt-2 text-sm text-gray-600 space-y-1">
-            <li>Email: <a href="mailto:nabilahdaa@gmail.com" className="hover:text-green-500">nabilahdaa@gmail.com</a></li>
-            <li>Phone: <a href="tel:+6282160455334" className="hover:text-green-500">+6282160455334</a></li>
-            <li>Phone: <a href="tel:+6285293838468" className="hover:text-green-500">+6285293838468</a></li>
-          </ul>
-        </div>
+          {/* Service */}
+          <div className="space-y-1">
+            <h4 className="font-semibold text-lg">Service</h4>
+            <ul className="text-sm text-gray-500 space-y-1">
+              <li><a href="/" className="hover:text-green-600">Tracking Food Nutrition</a></li>              
+              <li><a href="/tracker" className="hover:text-green-600">Health Articles</a></li>
+              <li><a href="/education" className="hover:text-green-600">FAQ</a></li>              
+            </ul>
+          </div>
 
-        {/* Location Section */}
-        <div className="flex flex-col mb-6 md:mb-0">
-          <h3 className="font-semibold text-lg text-gray-800">Location</h3>
-          <p className="mt-2 text-sm text-gray-600">
-            Universitas Sumatera Utara, Medan, Sumatera Utara
-          </p>
+          {/* Contact */}
+          <div className="space-y-1">
+            <h4 className="font-semibold text-lg">Contact</h4>
+            <ul className="text-sm text-gray-500 space-y-1">
+              <li><a href="/" className="hover:text-green-600">InfoNutrijel@gmail.com</a></li>              
+              <li><a href="/tracker" className="hover:text-green-600">+6209348484</a></li>
+              <li><a href="/education" className="hover:text-green-600">Jalan. Indah kapuk</a></li>              
+            </ul>
+          </div>
         </div>
+        
 
-        {/* Navigation Section */}
-        <div className="flex flex-col mb-6 md:mb-0">
-          <h3 className="font-semibold text-lg text-gray-800">Navigation</h3>
-          <ul className="mt-2 text-sm text-gray-600 space-y-1">
-            <li><a href="/" className="hover:text-green-500">Home</a></li>
-            <li><a href="/menu" className="hover:text-green-500">Menu</a></li>
-            <li><a href="/tracker" className="hover:text-green-500">Tracker</a></li>
-            <li><a href="/education" className="hover:text-green-500">Education</a></li>
-            <li><a href="/chatbot" className="hover:text-green-500">AI Chatbot</a></li>
-          </ul>
+        {/* Footer Bottom */}
+        <div className="py-5 text-center text-sm text-gray-500">
+          <p>© 2025 NutriJel. All rights reserved.</p>
         </div>
-      </div>
-
-      {/* Footer Bottom */}
-      <div className="border-t mt-8 pt-4 text-center text-sm text-gray-600">
-        <p>&copy; 2025 NutriCheck. All rights reserved.</p>
       </div>
     </footer>
   );

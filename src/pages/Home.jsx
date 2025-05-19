@@ -25,7 +25,7 @@ const Home = () => {
             </div>
           </div>
           <div className="w-[40%]">
-            <img src="/assets/image/b2.png" alt="Healthy food" className="w-full h-auto rounded-xl" />
+            <img src="/assets/image/home-hero.png" alt="Healthy food" className="w-full h-auto rounded-xl" />
           </div>
         </div>
       </section>
