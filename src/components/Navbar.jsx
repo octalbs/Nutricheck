@@ -1,27 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
+import '../styles/index.css';
 
 const Navbar = () => {
   return (
-    <nav className=" p-4 shadow-md">
+    <nav className="fixed top-0 left-0 w-full p-4 shadow-md bg-transparent backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src="../assets/logo.png" alt="NutriCheck" className="h-8" /> {/* Ganti dengan path logo kamu */}
+          <img src="/assets/image/logo.png" alt="NutriCheck" className="h-20" />
         </div>
-        
+
         {/* Menu */}
-        <ul className="flex space-x-6">
-          <li><a href="/" className="text-green-800 hover:text-green-600">Home</a></li>
-          <li><a href="/food" className="text-green-800 hover:text-green-600">Food</a></li>
-          <li><a href="/tracker" className="text-green-800 hover:text-green-600">Tracker</a></li>
-          <li><a href="/education" className="text-green-800 hover:text-green-600">Education</a></li>
-          <li><a href="/about" className="text-green-800 hover:text-green-600">About us</a></li>
+        <ul className="flex space-x-6 font-bold">
+          <li><Link to="/" className="hover:text-[#196D0D]">Home</Link></li>
+          <li><Link to="/food" className=" hover:text-[#196D0D]">Food</Link></li> {/* Fixed the path */}
+          <li><Link to="/tracker" className="hover:text-[#196D0D]">Tracker</Link></li>
+          <li><Link to="/education" className=" hover:text-[#196D0D]">Education</Link></li>
+          <li><Link to="/about" className="hover:text-[#196D0D]">About us</Link></li>
         </ul>
 
         {/* Buttons (Login and Sign-Up) */}
         <div className="flex space-x-4">
-          <a href="/login" className="bg-[#CFEBD1] text-white px-4 py-2 rounded-full hover:bg-green-600 transition">Login</a>
-          <a href="/signup" className="bg-white text-green-500 px-4 py-2 rounded-full border-2 border-green-500 hover:bg-green-50 transition">Sign-Up</a>
+          <Link to="/login" className="bg-[#196D0D] text-white px-4 py-2 rounded-full hover:bg-green-600 transition">Login</Link> {/* Fixed the path */}
+          <Link to="/signup" className="bg-white text-green-500 px-4 py-2 rounded-full border-2 border-[#196D0D] hover:bg-green-600 hover:text-white transition">Sign-Up</Link> {/* Fixed the path */}
         </div>
       </div>
     </nav>
