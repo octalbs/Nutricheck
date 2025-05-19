@@ -1,65 +1,75 @@
 import React from 'react';
+import '../styles/index.css';
+
 
 const Home = () => {
   return (
-    <div className="font-sans bg-[#A9D991]">
-
+    <div className="bg-[#CFEBD1]">
       {/* Hero Section */}
-      <section className="flex justify-between items-center bg-[#A9D991] py-16 px-4 text-center">
-        <div className='flex flex-col items-center'>
-          <h1 className="text-4xl font-bold text-green-800">We Take Care About Your Health</h1>
-          <p className="mt-4 text-lg text-green-700">Simplify your journey to balanced nutrition with healthy food choices. Track your meals and discover amazing recipes, easily!</p>
-          <button className="mt-6 bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600">see all</button>
-        </div>
-        <div>
-          <img src="./assets/hero-home.png" alt="" />
+      <section className="py-35">
+        <div className="flex justify-between items-center rounded-lg">
+          <div className="w-1/2 text-center text-[#333] ml-10">
+            <h1 className="text-5xl font-bold text-[#1e3c3f] tracking-tighter leading-normal ">
+              Welcome to a <span className="text-[#196D0D]">Healthy and Educational</span> platform for <br />a better life
+            </h1>
+            <p className="text-2xl leading-8 ">
+              Discover how to live a healthy life, monitor your progress, <br />and learn the best nutrition for your body.
+            </p>
+            <div className="mt-6 flex justify-center gap-4">
+              <button className="bg-[#196D0D] text-white px-8 py-3 rounded-4xl text-xl hover:bg-[#155d07] transition-colors">
+                Start Now
+              </button>
+              <button className="bg-transparent border-2 border-[#196D0D] text-[#196D0D] px-8 py-3 rounded-4xl text-xl hover:bg-[#196D0D] hover:text-white transition-colors">
+                See More
+              </button>
+            </div>
+          </div>
+          <div className="w-[40%]">
+            <img src="/assets/image/b2.png" alt="Healthy food" className="w-full h-auto rounded-xl" />
+          </div>
         </div>
       </section>
 
-      {/* NutriJel Section */}
-      <section className="bg-yellow-50 py-16 text-center">
-        <h2 className="text-3xl font-semibold text-green-700">Welcome to NutriJel!</h2>
-        <p className="mt-4 text-lg text-gray-700">Your Digital Nutrition Companion - Making Healthy Eating Effortless!</p>
-        <div className="mt-6 flex justify-center space-x-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <img src="/path/to/food-icon1.png" alt="Food Icon" className="h-16 mb-4" />
-            <p className="font-semibold">Healthy Recipes</p>
+      {/* Key Features */}
+      <section className="bg-[#FDFAF6] py-16 text-center">
+        <h2 className="text-3xl font-semibold text-[#196D0D]">Our Key Features</h2>
+        <p className="mt-4 text-xl text-gray-700 mb-10">Discover various features that will help you live a healthy lifestyle and gain useful knowledge.</p>
+        <div className="mt-6 flex justify-center space-x-6 mb-15 ">
+          <div className=" p-6 rounded-lg shadow-lg text-center hover:shadow-xl hover:scale-105 transition-all duration-300">
+            <div className="flex justify-start items-center mb-4">
+              <img src="/assets/image/features-icon-1.png" alt="Food Icon" className="h-16 mr-4" />
+              <h3 className="font-semibold">Food</h3>
+            </div>
+            <p className="text-gray-600">Complete information about food <br />
+            nutrition and diet recommendations <br />
+            according to your needs.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <img src="/path/to/food-icon2.png" alt="Food Icon" className="h-16 mb-4" />
-            <p className="font-semibold">Meal Tracker</p>
+          <div className=" p-6 rounded-lg shadow-lg text-center hover:shadow-xl hover:scale-105 transition-all duration-300">
+            <div className="flex justify-start items-center mb-4">
+              <img src="/assets/image/features-icon-2.png" alt="Food Icon" className="h-16 mr-4" />
+              <h3 className="font-semibold">Track</h3>
+            </div>
+            <p className="text-gray-600">Track your health progress <br />
+            with easy-to-use <br />
+            and informative tracking tools.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <img src="/path/to/food-icon3.png" alt="Food Icon" className="h-16 mb-4" />
-            <p className="font-semibold">Nutrition Tips</p>
-          </div>
-        </div>
-        <button className="mt-6 bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600">Explore</button>
-      </section>
-
-      {/* How It Works Section */}
-      <section className="py-16 bg-green-100 text-center">
-        <h3 className="text-3xl font-semibold text-green-700">How It Works?</h3>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <img src="/path/to/input-icon.png" alt="Input" className="h-16 mb-4 mx-auto" />
-            <h4 className="text-xl font-semibold">Input your daily food</h4>
-            <p className="text-gray-600">Enter the food you consume daily for tracking your nutrition.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <img src="/path/to/analysis-icon.png" alt="Analysis" className="h-16 mb-4 mx-auto" />
-            <h4 className="text-xl font-semibold">Analysis</h4>
-            <p className="text-gray-600">Our system will analyze your daily intake and provide insights.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <img src="/path/to/dashboard-icon.png" alt="Dashboard" className="h-16 mb-4 mx-auto" />
-            <h4 className="text-xl font-semibold">View your nutrition dashboard</h4>
-            <p className="text-gray-600">Track your progress with an easy-to-read nutrition dashboard.</p>
+          <div className=" p-6 rounded-lg shadow-lg text-center hover:shadow-xl hover:scale-105 transition-all duration-300">
+            <div className="flex justify-start items-center mb-4">
+              <img src="/assets/image/features-icon-3.png" alt="Food Icon" className="h-16 mr-4" />
+              <h3 className="font-semibold">Education</h3>
+            </div>
+            <p className="text-gray-600">Access a variety of articles, <br />
+            videos and courses on <br />
+            health and healthy lifestyle.</p>
           </div>
         </div>
-        <button className="mt-6 bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600">Track your daily food</button>
-      </section>
 
+        <div className="bg-[#CFEBD1] p-10">
+          <h2 className="text-[#196D0D] font-bold text-3xl mt-10"> Ready to start your healthy journey?</h2>
+          <p className="text-gray-600 mt-2">Join now to experience the benefits of our platform and start living healthier today.</p>
+          <button className="mt-6 bg-[#196D0D] text-white px-8 py-3 rounded-4xl text-xl hover:bg-[#155d07] transition-colors">Join Now!</button>
+        </div>              
+      </section>
     </div>
   );
 };
