@@ -1,4 +1,13 @@
 import React from "react";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Food = () => {
   return (
@@ -49,72 +58,289 @@ const Food = () => {
       </section>
 
       {/* New Section with Grid */}
-      <section className="">
-        <div className="mt-20 px-10">
-          <div className="bg-white py-4 mb-10 border-2 border-[#196D0D] rounded-4xl w-4/5 mx-auto text-center ">
-            <h3 className="text-3xl font-bold text-[#196D0D]">Fiber</h3>
-          </div>
-          <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {/* Yellow Category */}
-            <div className="text-center bg-white py-10 px-10 mx-auto">
-              <img 
-                src="/assets/image/fiber-yellow.png" 
-                alt="Yellow" 
-                className="w-60  object-contain mx-auto rounded-lg" 
-              />
-              <h3 className="mt-4   text-lg font-semibold">Yellow</h3>
-              <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+      <section className="pb-20">
+
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}          
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}
+        >
+          <SwiperSlide>
+            <div className="mt-20 px-10">
+              <div className="bg-white py-4 mb-10 border-2 border-[#196D0D] rounded-4xl w-4/5 mx-auto text-center ">
+                <h3 className="text-3xl font-bold text-[#196D0D]">Fiber</h3>
+              </div>
+              <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {/* Yellow Category */}
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Yellow</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4 text-lg font-semibold">White</h3>
+                  <p className="text-lg font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-white.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Green</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Red</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Purple</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Orange</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                
+                
+                
+              </div>
+            </div>            
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="mt-20 px-10">
+              <div className="bg-white py-4 mb-10 border-2 border-[#196D0D] rounded-4xl w-4/5 mx-auto text-center ">
+                <h3 className="text-3xl font-bold text-[#196D0D]">Fiber</h3>
+              </div>
+              <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {/* Yellow Category */}
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Yellow</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4 text-lg font-semibold">White</h3>
+                  <p className="text-lg font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-white.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Green</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Red</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Purple</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Orange</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                
+                
+                
+              </div>
             </div>
-            <div className="text-center bg-white py-10 px-10 mx-auto">
-              <img 
-                src="/assets/image/fiber-yellow.png" 
-                alt="Yellow" 
-                className="w-60  object-contain mx-auto rounded-lg" 
-              />
-              <h3 className="mt-4 text-lg font-semibold">White</h3>
-              <p className="text-lg font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="mt-20 px-10">
+              <div className="bg-white py-4 mb-10 border-2 border-[#196D0D] rounded-4xl w-4/5 mx-auto text-center ">
+                <h3 className="text-3xl font-bold text-[#196D0D]">Fiber</h3>
+              </div>
+              <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {/* Yellow Category */}
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Yellow</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4 text-lg font-semibold">White</h3>
+                  <p className="text-lg font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-white.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Green</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Red</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Purple</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Orange</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                
+                
+                
+              </div>
             </div>
-            <div className="text-center bg-white py-10 px-10 mx-auto">
-              <img 
-                src="/assets/image/fiber-white.png" 
-                alt="Yellow" 
-                className="w-60  object-contain mx-auto rounded-lg" 
-              />
-              <h3 className="mt-4   text-lg font-semibold">Green</h3>
-              <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="mt-20 px-10">
+              <div className="bg-white py-4 mb-10 border-2 border-[#196D0D] rounded-4xl w-4/5 mx-auto text-center ">
+                <h3 className="text-3xl font-bold text-[#196D0D]">Fiber</h3>
+              </div>
+              <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {/* Yellow Category */}
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Yellow</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4 text-lg font-semibold">White</h3>
+                  <p className="text-lg font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-white.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Green</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Red</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Purple</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                <div className="text-center bg-white py-10 px-10 mx-auto">
+                  <img 
+                    src="/assets/image/fiber-yellow.png" 
+                    alt="Yellow" 
+                    className="w-60  object-contain mx-auto rounded-lg" 
+                  />
+                  <h3 className="mt-4   text-lg font-semibold">Orange</h3>
+                  <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+                </div>
+                
+                
+                
+              </div>
             </div>
-            <div className="text-center bg-white py-10 px-10 mx-auto">
-              <img 
-                src="/assets/image/fiber-yellow.png" 
-                alt="Yellow" 
-                className="w-60  object-contain mx-auto rounded-lg" 
-              />
-              <h3 className="mt-4   text-lg font-semibold">Red</h3>
-              <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
-            </div>
-            <div className="text-center bg-white py-10 px-10 mx-auto">
-              <img 
-                src="/assets/image/fiber-yellow.png" 
-                alt="Yellow" 
-                className="w-60  object-contain mx-auto rounded-lg" 
-              />
-              <h3 className="mt-4   text-lg font-semibold">Purple</h3>
-              <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
-            </div>
-            <div className="text-center bg-white py-10 px-10 mx-auto">
-              <img 
-                src="/assets/image/fiber-yellow.png" 
-                alt="Yellow" 
-                className="w-60  object-contain mx-auto rounded-lg" 
-              />
-              <h3 className="mt-4   text-lg font-semibold">Orange</h3>
-              <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
-            </div>
-            
-            
-            
-          </div>
-        </div>
+          </SwiperSlide>
+          
+        </Swiper>
+        
       </section>
 
 
