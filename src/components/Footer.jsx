@@ -4,13 +4,13 @@ import '../styles/index.css';
 const Footer = () => {
   return (
     <footer className="bg-[#F9F9F9] text-gray-800 ">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 pt-5">
         <div className="flex justify-between ">
 
           {/* Logo and Text */}
           <div>            
-              <img src="/assets/image/logo.png" alt="NutriCheck" className="h-25" />
-              <p className="text-lg text-gray-500 mt-2">
+              <img src="/assets/image/logo.png" alt="NutriCheck" className="h-20" />
+              <p className="text-sm text-gray-500 ">
                 Healthy and educational <br /> platform for a better life.
               </p>            
           </div>         

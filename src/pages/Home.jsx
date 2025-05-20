@@ -31,7 +31,7 @@ const Home = () => {
       </section>
 
       {/* Key Features */}
-      <section className="bg-[#FDFAF6] py-16 text-center">
+      <section className="bg-[#FDFAF6] pt-16 text-center">
         <h2 className="text-3xl font-semibold text-[#196D0D]">Our Key Features</h2>
         <p className="mt-4 text-xl text-gray-700 mb-10">Discover various features that will help you live a healthy lifestyle and gain useful knowledge.</p>
         <div className="mt-6 flex justify-center space-x-6 mb-15 ">

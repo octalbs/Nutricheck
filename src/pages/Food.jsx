@@ -27,42 +27,97 @@ const Food = () => {
       </section>
 
       {/* Food categories section */}
-      <section className="py-20">
+      <section className="py-15 bg-[#CFEBD1]">
         <div className="flex justify-center gap-16">
           <div className="text-center">
-            <img 
-              src="/assets/image/food-hero.png" 
-              alt="Vegetable & Fruit" 
-              className="rounded-lg w-64 h-64 object-contain mx-auto border-4 border-[#196D0D]" 
-            />
-            <p className="mt-4">Vegetable & Fruit</p>
+            <img src="/assets/image/categories-fiber.png" alt="Fiber" className="rounded-4xl w-50 h-50 object-contain mx-auto p-6 border-2 border-[#196D0D] transform transition duration-300 hover:scale-105 hover:shadow-lg" />
+            <h3 className="mt-4 font-semibold">Fiber</h3>
           </div>
           <div className="text-center">
-            <img 
-              src="/assets/image/food-hero.png" 
-              alt="Protein" 
-              className="rounded-lg w-64 h-64 object-contain mx-auto border-4 border-[#196D0D]" 
-            />
-            <p className="mt-4">Protein</p>
+            <img src="/assets/image/categories-protein.png" alt="Fiber" className="rounded-4xl w-50 h-50 object-contain mx-auto p-6 border-2 border-[#196D0D] transform transition duration-300 hover:scale-105 hover:shadow-lg" />
+            <h3 className="mt-4 font-semibold">Protein</h3>
           </div>
           <div className="text-center">
-            <img 
-              src="/assets/image/food-hero.png" 
-              alt="Fats" 
-              className="rounded-lg w-64 h-64 object-contain mx-auto border-4 border-[#196D0D]" 
-            />
-            <p className="mt-4">Fats</p>
+            <img src="/assets/image/categories-fats.png" alt="Fiber" className="rounded-4xl w-50 h-50 object-contain mx-auto p-6 border-2 border-[#196D0D] transform transition duration-300 hover:scale-105 hover:shadow-lg" />
+            <h3 className="mt-4 font-semibold">Fats</h3>
           </div>
           <div className="text-center">
-            <img 
-              src="/assets/image/food-hero.png" 
-              alt="Carbs" 
-              className="rounded-lg w-64 h-64 object-contain mx-auto border-4 border-[#196D0D]" 
-            />
-            <p className="mt-4">Carbs</p>
+            <img src="/assets/image/categories-carbs.png" alt="Fiber" className="rounded-4xl w-50 h-50 object-contain mx-auto p-6 border-2 border-[#196D0D] transform transition duration-300 hover:scale-105 hover:shadow-lg" />
+            <h3 className="mt-4 font-semibold">Carbs</h3>
           </div>
         </div>
       </section>
+
+      {/* New Section with Grid */}
+      <section className="">
+        <div className="mt-20 px-10">
+          <div className="bg-white py-4 mb-10 border-2 border-[#196D0D] rounded-4xl w-4/5 mx-auto text-center ">
+            <h3 className="text-3xl font-bold text-[#196D0D]">Fiber</h3>
+          </div>
+          <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {/* Yellow Category */}
+            <div className="text-center bg-white py-10 px-10 mx-auto">
+              <img 
+                src="/assets/image/fiber-yellow.png" 
+                alt="Yellow" 
+                className="w-60  object-contain mx-auto rounded-lg" 
+              />
+              <h3 className="mt-4   text-lg font-semibold">Yellow</h3>
+              <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+            </div>
+            <div className="text-center bg-white py-10 px-10 mx-auto">
+              <img 
+                src="/assets/image/fiber-yellow.png" 
+                alt="Yellow" 
+                className="w-60  object-contain mx-auto rounded-lg" 
+              />
+              <h3 className="mt-4 text-lg font-semibold">White</h3>
+              <p className="text-lg font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+            </div>
+            <div className="text-center bg-white py-10 px-10 mx-auto">
+              <img 
+                src="/assets/image/fiber-white.png" 
+                alt="Yellow" 
+                className="w-60  object-contain mx-auto rounded-lg" 
+              />
+              <h3 className="mt-4   text-lg font-semibold">Green</h3>
+              <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+            </div>
+            <div className="text-center bg-white py-10 px-10 mx-auto">
+              <img 
+                src="/assets/image/fiber-yellow.png" 
+                alt="Yellow" 
+                className="w-60  object-contain mx-auto rounded-lg" 
+              />
+              <h3 className="mt-4   text-lg font-semibold">Red</h3>
+              <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+            </div>
+            <div className="text-center bg-white py-10 px-10 mx-auto">
+              <img 
+                src="/assets/image/fiber-yellow.png" 
+                alt="Yellow" 
+                className="w-60  object-contain mx-auto rounded-lg" 
+              />
+              <h3 className="mt-4   text-lg font-semibold">Purple</h3>
+              <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+            </div>
+            <div className="text-center bg-white py-10 px-10 mx-auto">
+              <img 
+                src="/assets/image/fiber-yellow.png" 
+                alt="Yellow" 
+                className="w-60  object-contain mx-auto rounded-lg" 
+              />
+              <h3 className="mt-4   text-lg font-semibold">Orange</h3>
+              <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
+            </div>
+            
+            
+            
+          </div>
+        </div>
+      </section>
+
+
 
     </div>
   );
