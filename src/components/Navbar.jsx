@@ -4,7 +4,7 @@ import '../styles/index.css';
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full p-4 shadow-md bg-transparent backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 w-full p-4 shadow-md bg-transparent backdrop-blur-sm z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
