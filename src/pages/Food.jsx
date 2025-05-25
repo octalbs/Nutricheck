@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/index.css';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
