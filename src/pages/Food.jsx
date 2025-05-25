@@ -56,8 +56,7 @@ const Food = () => {
           </div>
         </div>
       </section>
-
-      {/* New Section with Grid */}
+      
       <section className="pb-20">
         {/* Custom CSS for Swiper styling */}
         <style jsx>{`
@@ -88,8 +87,7 @@ const Food = () => {
           }
         `}</style>
 
-        <Swiper
-          // install Swiper modules
+        <Swiper          
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
           slidesPerView={1}
@@ -159,12 +157,10 @@ const Food = () => {
                   <h3 className="mt-4   text-lg font-semibold">Orange</h3>
                   <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
                 </div>
-                
-                
-                
               </div>
             </div>            
           </SwiperSlide>
+
           <SwiperSlide>
             <div className="mt-20 px-10">
               <div className="bg-white py-4 mb-10 border-2 border-[#196D0D] rounded-4xl w-4/5 mx-auto text-center ">
@@ -226,12 +222,10 @@ const Food = () => {
                   <h3 className="mt-4   text-lg font-semibold">Orange</h3>
                   <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
                 </div>
-                
-                
-                
               </div>
             </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <div className="mt-20 px-10">
               <div className="bg-white py-4 mb-10 border-2 border-[#196D0D] rounded-4xl w-4/5 mx-auto text-center ">
@@ -293,12 +287,10 @@ const Food = () => {
                   <h3 className="mt-4   text-lg font-semibold">Orange</h3>
                   <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
                 </div>
-                
-                
-                
               </div>
             </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <div className="mt-20 px-10">
               <div className="bg-white py-4 mb-10 border-2 border-[#196D0D] rounded-4xl w-4/5 mx-auto text-center ">
@@ -360,19 +352,11 @@ const Food = () => {
                   <h3 className="mt-4   text-lg font-semibold">Orange</h3>
                   <p className="text-lg   font-light max-w-[250px]">Immune system, Healthy heart, Prevents ulcers, and Healthy Colon</p>
                 </div>
-                
-                
-                
               </div>
             </div>
-          </SwiperSlide>
-          
-        </Swiper>
-        
+          </SwiperSlide>          
+        </Swiper>        
       </section>
-
-
-
     </div>
   );
 };
