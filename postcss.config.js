@@ -3,4 +3,8 @@ module.exports = {
     "@tailwindcss/postcss": {},
     autoprefixer: {},
   },
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> origin/main
